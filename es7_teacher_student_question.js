@@ -20,7 +20,7 @@ class Student extends Person {
   }
 
   get iq() { return this._iq }
-  learn() { ++this._iq; return self }
+  learn() { ++this._iq; return this }
   responseTime() { return Math.floor(100000 / this._iq) }
 
   async answerQuestion(func, params_obj) {
